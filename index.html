@@ -10,16 +10,23 @@
 </head>
 
 <body style="background-color: whitesmoke">
- <div><input style="width: 30px;" class="addNodeInput" type="text" placeholder="1"><button class="addNode">Add node</button></div>
+<div><input style="width: 30px;" class="addNodeInputFrom" type="text" placeholder="From"><input style="width: 30px;" class="addNodeInputTo" type="text" placeholder="To"><button class="addEdge">Add node</button></div>
+<div><input style="width: 30px;" class="removeEdgeInputFrom" type="text" placeholder="From"><input style="width: 30px;" class="removeEdgeInputTo" type="text" placeholder="To"><button class="removeEdge">Remove edge</button></div>
+
+<div><input style="width: 30px;" class="addEdgeInputFrom" type="text" placeholder="From"><input style="width: 30px;" class="addEdgeInputTo" type="text" placeholder="To"><button class="addEdge2">Add edge</button></div>
+
+<div><input style="width: 30px;" class="replaceSubsInputFrom" type="text" placeholder="From"><input style="width: 30px;" class="replaceSubsInputTo" type="text" placeholder="To"><button class="replaceSubs">replaceSubs</button></div>
+
  <div><input style="width: 30px;" class="removeNodeInput" type="text" placeholder="1"><button class="removeNode">Remove node</button></div>
- <div><input style="width: 30px;" class="addEdgeInputFrom" type="text" placeholder="From"><input style="width: 30px;" class="addEdgeInputTo" type="text" placeholder="To"><button class="addEdge">Add edge</button></div>
- <div><input style="width: 30px;" class="removeEdgeInputFrom" type="text" placeholder="From"><input style="width: 30px;" class="removeEdgeInputTo" type="text" placeholder="To"><button class="removeEdge">Remove edge</button></div>
- <div><input class="addCycleInput" type="text" placeholder="[1,2,3,4,5,6,...]"><button class="addCycle">Add cycle</button></div>
+
+
+<div><textarea name="" id="drawGraph" cols="30" rows="10"></textarea><br><button id="drawButton">Draw graph</button></div>
+
     <div style="height:100vh" id="canvas"></div>
 
 
 
-
+    <script src="jquery.min.js"></script>
     <script src="d3d3.js"></script>
     <script src="jsnetworkx.js"></script>
     <script src="index.js"></script>
